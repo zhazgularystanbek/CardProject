@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: #1f1f1f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  column-gap: 55px;
+}
+.admin-block {
+  width: 390px;
+  height: 844px;
+  padding: 0 24px;
+  border-radius: 30px;
+  background-image: url("./img/unsplash_Bq7nHY4trGA.png");
+}
+.title {
+  margin-top: 88px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.admin {
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+}
+.enter-dtl {
+  color: #f90;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+label {
+  color: rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  outline: none;
+  width: 279px;
+  margin-bottom: 28px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.501px; /* 175.011% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.uname {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.number-block {
+  position: relative;
+}
+.icon-block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 20px;
+  right: 15px;
+  display: none;
+}
+.type-cc {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  bottom: 35px;
+  cursor: pointer;
+}
+.cardIcon {
+  position: absolute;
+  width: 32px;
+  bottom: 7px;
+  right: 0px;
+}
+.visa {
+  bottom: -20px;
+}
+.mastercard {
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+}
+
+.cvv-item {
+  position: relative;
+}
+.help {
+  position: absolute;
+  right: 15px;
+  bottom: 33px;
+  cursor: pointer;
+}
+.help-text {
+  position: absolute;
+  left: 112px;
+  top: -32px;
+  display: none;
+}
+.help-txt {
+  color: #f90;
+  font-size: 12px;
+}
+.switch-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+.switch {
+  position: relative;
+  width: 29px;
+  height: 9px;
+  border-radius: 16px;
+  background: grey;
+  margin-right: 15px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.switch-swiper {
+  position: absolute;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  bottom: -4px;
+  background: #042843;
+  stroke-width: 1px;
+  stroke: #2d4e81;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.save-btn {
+  padding: 12px 72px;
+  border-radius: 40px;
+  background: #f90;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.519px; /* 136.216% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 90px;
+  margin-left: 73px;
+}
+.edit-btn1 {
+  padding: 12px 72px;
+  border-radius: 40px;
+  background: #f90;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.519px; /* 136.216% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 90px;
+  margin-left: 73px;
+  display: none;
+  transition: 0.3s ease;
+}
+.edit-btn1:hover {
+  background-color: rgb(126, 114, 97);
+}
+.card-title {
+  margin-bottom: 8px;
+}
+.money {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+.saved {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.add-new {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #f90;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.new-card-icon {
+  width: 49.038px;
+  height: 49.038px;
+}
+.visaIconBg {
+  width: 49.038px;
+  height: 49.038px;
+  background-image: url("./img/visaIcon.png");
+  background-repeat: no-repeat;
+}
+.mcIconbg {
+  width: 49.038px;
+  height: 49.038px;
+  background-image: url("./img/mastercard.png");
+  background-repeat: no-repeat;
+}
+.new-card-block {
+  width: 342px;
+  height: 190px;
+  padding: 25px 25px 30px 25px;
+  margin-bottom: 20px;
+}
+.ms-bg {
+  background-image: url("./img/msBg.png");
+}
+.visa-bg {
+  width: 342px;
+  height: 190px;
+  background-image: url("./img/visaBg.png");
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.edit {
+  margin-left: 6px;
+}
+.card-num {
+  margin-top: 9px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.519px; /* 153.243% */
+  letter-spacing: 1.6px;
+  margin-bottom: 11px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
+}
+.info div div {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.519px; /* 204.324% */
+  text-transform: uppercase;
+}
+.info div p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.519px; /* 153.243% */
+  text-transform: uppercase;
+}

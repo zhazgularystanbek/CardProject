@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="admin-block">
+        <h1 class="title card-title">Checkout</h1>
+        <p class="money">€ 300,00</p>
+        <div class="card-item">
+          <div class="saved">Saved Cards</div>
+          <a href="#" class="add-new">
+            <img src="./img/plus.png" alt="" />Add New
+          </a>
+        </div>
+        <div class="block-cont">
+          <!-- <div class="new-card-block ms-bg">
+            <div class="images">
+              <img src="./img/mastercard.png" alt="" class="new-card-icon" />
+              <div class="icons">
+                <img src="./img/delete.png" alt="" class="del" />
+                <img src="./img/edit.png" alt="" class="edit" />
+              </div>
+            </div>
+            <div class="card-num">5142 - 8164 - 6526 - 2563</div>
+            <div class="info">
+              <div class="userInfo">
+                <div class="info-title">Name</div>
+                <p class="usname">jasjjsajsa</p>
+              </div>
+              <div class="validInfo">
+                <div class="valid-title">Valid Till</div>
+                <p class="valid-date">12/25</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="admin-block">
+        <h1 class="title">Add new card</h1>
+        <div class="admin">
+          <div class="enter-dtl">Enter details</div>
+          <div class="name-block">
+            <label for="uname">Name</label><br />
+            <input
+              type="text"
+              name="uname"
+              id="uname"
+              class="uname"
+              placeholder="NAME..."
+            />
+          </div>
+          <label for="number">Card number</label>
+          <div class="number-block">
+            <input
+              type="text"
+              placeholder="1111 - 1111 - 1111 - 1111"
+              class="numInput"
+              maxlength="25"
+            /><br />
+            <div class="type">
+              <p class="type-cc">Type of<br />card&#9660;</p>
+              <ul class="icon-block">
+                <li>
+                  <img src="./img/visaIcon.png" alt="" class="visa cardIcon" />
+                </li>
+                <li>
+                  <img
+                    src="./img/mastercard.png"
+                    alt=""
+                    class="mastercard cardIcon"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="date-block">
+            <label for="date">Expiry date</label><br />
+            <input
+              type="text"
+              id="date"
+              class="dateInput"
+              name="date"
+              placeholder="10/2028"
+              maxlength="7"
+            />
+          </div>
+          <div class="cvv-block">
+            <label for="cvv">Cvv</label><br />
+            <div class="cvv-item">
+              <input
+                type="number"
+                class="cvv-num"
+                id="cvv"
+                name="cvv"
+                placeholder="045"
+              />
+              <img src="./img/help-circle.png" alt="" class="help" />
+              <div class="help-text">
+                <p class="help-txt">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="switch-block">
+            <div class="enter-dtl">Enter details</div>
+            <div class="switch">
+              <span class="switch-swiper"></span>
+            </div>
+          </div>
+        </div>
+        <button class="save-btn">SAVE</button>
+        <button class="edit-btn1">EDIT</button>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

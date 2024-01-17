@@ -260,17 +260,14 @@ function addData() {
   });
 
   const btns = document.querySelectorAll(".del");
+
   btns.forEach((elem, ind) => {
     elem.addEventListener("click", () => {
-      elem.parentElement.parentElement.parentElement.remove();
-      let data = JSON.parse(localStorage.getItem("data")) || [];
-      data.splice(ind, 1);
-      localStorage.setItem("data", JSON.stringify(data));
-      addData();
-      // delItem(ind);
-      // addData();
+      modalb.style.display = "block";
+      modalb.setAttribute("id", ind);
     });
   });
+
   const editbtns = document.querySelectorAll(".edit");
   editbtns.forEach((elem, ind) => {
     elem.addEventListener("click", () => {
@@ -318,6 +315,8 @@ function addData() {
           ? (masterCardImg.style.bottom = "7px")
           : (masterCardImg.style.bottom = "");
       }
+      if (!sw.classList.contains("checked")) {
+      }
       editBtn.style.display = "block";
       saveBtn.style.display = "none";
     });
@@ -361,3 +360,23 @@ function getBg() {
     return "./img/visaBg.png";
   }
 }
+
+const modalb = document.querySelector(".modal");
+const closeModalBtn = document.querySelector(".closeModal");
+const yesBtn = document.querySelector(".yes");
+const noBtn = document.querySelector(".no");
+
+closeModalBtn.addEventListener("click", () => {
+  modalb.style.display = "";
+});
+noBtn.addEventListener("click", () => {
+  modalb.style.display = "";
+});
+yesBtn.addEventListener("click", () => {
+  let a = modalb.getAttribute("id");
+  let data = JSON.parse(localStorage.getItem("data")) || [];
+  data.splice(a, 1);
+  localStorage.setItem("data", JSON.stringify(data));
+  addData();
+  modalb.style.display = "none";
+});
